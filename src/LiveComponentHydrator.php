@@ -794,7 +794,7 @@ final class LiveComponentHydrator
                 $this->recursiveKeySort($value);
             }
         }
-        ksort($data, SORT_NATURAL);
+        ksort($data, SORT_STRING);
     }
 
     private function ensureOnUpdatedMethodExists(object $component, string $methodName): void
